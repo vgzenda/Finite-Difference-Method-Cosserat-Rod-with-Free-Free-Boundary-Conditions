@@ -1,3 +1,6 @@
+# Vaughn Gzenda 
+# 2025
+
 import numpy as np
 from scipy.linalg import expm, logm
 import matplotlib.pyplot as plt
@@ -23,7 +26,6 @@ def vee_SO3(W):
     else: 
         raise "ERROR: wrong size"
     
-
 def hat_SO3(w):
     """
     This function takes a 3x1 vector and generates a 3x3 skew-symmetric matrix.

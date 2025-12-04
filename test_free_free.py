@@ -1,7 +1,10 @@
+# Vaughn Gzenda 
+# 2025
+
 import numpy as np
 import matplotlib.pyplot as plt
 from cosserat_rod import Cosserat_Rod
-from visualize import *
+# from visualize import *
 
 
 
@@ -30,7 +33,6 @@ g_SE_list, mcE_list, mcV_list, Lambda_list, nu0_list = rod.time_integrate_free_f
     F_minus, F_plus, verbose=True
 )
 
-
 np.savez("simulation_results_toss1s.npz", 
          g_SE_list=np.array(g_SE_list), 
          mcE_list=np.array(mcE_list), 
@@ -39,7 +41,6 @@ np.savez("simulation_results_toss1s.npz",
          Lambda_list=np.array(Lambda_list), 
          tspan=np.array(rod.tspan)
     )
-
 
 data = np.load("simulation_results_toss1s.npz")
 g_SE_list = data["g_SE_list"]
